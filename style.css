@@ -16,7 +16,8 @@ body, html {
 .rings-image {
     position: absolute;
     width: 56%;
-    top: 68px;
+    top: 13%;
+    right:48%;
 }
 .ring-image-photo {
     width: 50%;
