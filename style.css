@@ -31,9 +31,10 @@ body, html {
     font-family: 'Space Grotesk', sans-serif;;
 }
 .profile-image {
+    /* position: absolute; */
+    width: 41%;
+    height: 456px;
 
-    width: 27%;
-    height: 390px;
 }
 .my_name {
     text-decoration: underline;
@@ -46,8 +47,8 @@ body, html {
 .circle-image {
     height: 53px;
     width: 80px;
-    top: 42%;
-    left: 68%;
+    top: 51%;
+    left: 55%;
 }
 .skill-name {
     font-family: 'Space Grotesk', sans-serif;
@@ -82,15 +83,20 @@ body, html {
         width: 20%;
         left: 87%;
         top: 88%;
-}
+    }
 .footer-ring-photo {
     position: absolute;
     height: 10%;
     width: 20%;
     top: 378%;
     left: -4%;
-
-/* right: 10%;   */
+    
+    /* right: 10%;   */
+}
+#name-1{
+    /* position: absolute; */
+    font-size: 4.25em;
+    /* width: 80%; */
 }
 
 @media only screen and  (max-width: 576px) {
@@ -142,7 +148,7 @@ body, html {
     top: 35%;
     left: 89%;
 } */
-@media only screen and  (min-width: 577px) and (max-width:850px ) {
+@media only screen and  (min-width: 577px) and (max-width:750px ) {
     .profile-image {
         width: 58%;     
         height: 20%;

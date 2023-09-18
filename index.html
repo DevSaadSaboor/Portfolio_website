@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Single-page developer portfolio</title>
   </head>
@@ -49,7 +50,7 @@
       <div class="row justify-content-between">
         <!-- mt-5 for margin top -->
         <div class="col  mt-5">
-          <h1 class="name">Nice to meet you!</h1>
+          <h1 class=" name " id="name-1">Nice to meet you!</h1>
           <h1 class="name">I'm <span class="my_name">Saad Saboor</span>.</h1>
           <br />
           <p class="main-description">
@@ -88,8 +89,8 @@
     
   </div>
     <div class="container experience g-3">
-      <div class="row">
-        <div class="col-12 col-md-auto col-sm-3">
+      <div class="row justify-content-between ">
+        <div class="col-auto col-md-auto col-sm-3">
           <div>
             <h5 class="skill-name">HTML</h5>
             <h5 class="skill-experience">4 Years Experience</h5>
@@ -100,7 +101,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-auto col-md-auto col-sm-3">
           <div>
             <h5 class="skill-name">CSS</h5>
             <h5 class="skill-experience">4 Years Experience</h5>
@@ -111,7 +112,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-auto col-md-auto col-sm-3">
           <div>
             <h5 class="skill-name">JavaScript</h5>
             <h5 class="skill-experience">4 Years Experience</h5>
@@ -158,7 +159,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col g-4">x`
+        <div class="col g-4">
           <img
             class="w-100"
             src="assets/images/thumbnail-project-3-large.webp"
@@ -212,18 +213,23 @@
           </h2>
         </div>
         <div class="col mt-4">
-          <form>
+          <form class="needs-validation">
             <!-- Name input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form4Example1">Name</label>
-        
-              <input type="text" placeholder="_______________________________________________________________" id="form4Example1" class="name_underline form-control-plaintext" />
+              <input type="text" placeholder="_______________________________________________________________" id="form4Example1" class="name_underline form-control-plaintext" required />
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
             </div>
 
             <!-- Email input -->
             <div class="form-outline mb-4">
               <label class="form-label" for="form4Example2">Email address</label>
-              <input type="email" placeholder="_______________________________________________________________" id="form4Example2" class="name_underline form-control-plaintext" />
+              <input type="email" placeholder="_______________________________________________________________" id="form4Example2" class="name_underline form-control-plaintext" required />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
             </div>
 
             <!-- Message input -->
@@ -235,21 +241,12 @@
                 id="form4Example3"
                 rows="1"
               ></textarea>
+              <div class="invalid-feedback">
+                Please enter a message.
+              </div>
             </div>
 
-            <!-- Checkbox
-            <div class="form-check d-flex justify-content-center mb-4">
-              <input
-                class="form-check-input me-2"
-                type="checkbox"
-                value=""
-                id="form4Example4"
-                checked
-              />
-              <label class="form-check-label" for="form4Example4">
-                Send me a copy of this message
-              </label>
-            </div> -->
+        
 
             <!-- Submit button -->
             <button type="submit" class="btn btn-dark">
@@ -284,107 +281,25 @@
   </div>
 </div>
 
-    <!-- Projects Contact me Design portfolio HTML CSS View project View code
-    E-learning landing page HTML CSS View project View code Todo web app HTML
-    CSS JavaScript View project View code Entertainment web app HTML CSS
-    JavaScript View project View code Memory Game HTML CSS JavaScript View
-    project View code Art gallery showcase HTML CSS JavaScript View project View
-    code Contact I would love to hear about your project and how I could help.
-    Please fill in the form, and I’ll get back to you as soon as possible. Name
-    Email Message Send message adamkeyes -->
-
-    <div class="container-1">
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
-                    <h3>Design</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        <a href="#">Read More</a>
-                </div>
-            </div>
-
-        </div>
-      </div>
-
-
-  .container1 .card{
-    position: relative;
-    cursor: pointer;
-}
-
-.container1 .card .face{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-}
-
-.container1 .card .face.face1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-}
-
-.container1 .card:hover .face.face1{
-    background: #ff0057;
-    transform: translateY(0);
-}
-
-.container1 .card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
-}
-
-.container1 .card:hover .face.face1 .content{
-    opacity: 1;
-}
-
-.container1 .card .face.face1 .content img{
-    max-width: 100px;
-}
-
-.container1 .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.container1 .card .face.face2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-.container1 .card:hover .face.face2{
-    transform: translateY(0);
-}
-
-.container1 .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-}
-
-.container1 .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: 900;
-
+<script>
+  // JavaScript validation
+  (function () {
+    'use strict';
+    window.addEventListener('load', function () {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+</script>
   </body>
 </html>
