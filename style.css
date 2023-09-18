@@ -1,164 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 
-body, html {
-    background-color: #151515;
-    color: #FFFFFF;
-    height: 100%;
-    
+body,
+html {
+  background-color: #151515;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 .main-div {
-    height: 63%;
+  height: 63%;
 }
 .name {
-    font-family: 'Space Grotesk', sans-serif;
-
+  font-family: "Space Grotesk", sans-serif;
 }
 .rings-image {
-    position: absolute;
-    width: 56%;
-    top: 13%;
-    right:48%;
+  position: absolute;
+  width: 56%;
+  top: 13%;
+  right: 48%;
 }
 .ring-image-photo {
-    width: 50%;
+  width: 50%;
 }
 
 .main-description {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1em;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1em;
 }
 .name {
-    font-size: 4.25em;
-    font-family: 'Space Grotesk', sans-serif;;
+  font-size: 4.25em;
+  font-family: "Space Grotesk", sans-serif;
 }
 .profile-image {
-    /* position: absolute; */
-    width: 41%;
-    height: 456px;
-
+  /* position: absolute; */
+  width: 41%;
+  height: 456px;
 }
 .my_name {
-    text-decoration: underline;
-    text-decoration-color: #4EE1A0;
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
 }
 .contact-me-header {
-    text-decoration: underline;
-    text-decoration-color: #4EE1A0;
+  text-decoration: underline;
+  text-decoration-color: #4ee1a0;
+}
+.circle-image {
+  height: 53px;
+  width: 80px;
+  top: 51%;
+  left: 56.3%;
+}
+.skill-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+.skill-experience {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+}
+.experience {
+  height: 28%;
+}
+.footer {
+  background-color: #242424;
+}
+.name_underline {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.contact_text {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+.experience-ring-photo {
+  position: absolute;
+  height: 70px;
+  width: 20%;
+  left: 87%;
+  top: 81%;
+}
+
+.footer-ring-photo {
+  position: absolute;
+  height: 10%;
+  width: 20%;
+  margin-top: 15%;
+  margin-left: -4%;
+}
+#name-1 {
+  font-size: 4.25em;
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-div {
+    height: 100%;
+    overflow: hidden;
+    font-size: 0.75em;
+  }
+  .profile-image {
+    width: 47%;
+    height: 20%;
+    overflow: hidden;
+  }
+  .circle-image {
+    top: 93%;
+    left: 79%;
+  }
+  .experience {
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .footer-ring-photo {
+    opacity: 0;
+  }
+  .ring-image-photo {
+    height: 149%;
+    width: 93%;
+  }
+  .rings-image {
+    height: 5%;
+    top: 20%;
+  }
+  .circle-image {
+    opacity: 0;
+  }
+  .experience-ring-photo {
+    position: absolute;
+    height: 82px;
+    width: 50%;
+    left: 82%;
+    top: 124%;
+}
+  
+}
+
+@media only screen and (min-width: 577px) and (max-width: 765px) {
+  .profile-image {
+    width: 100%;
+    height: 345px;
+    overflow: hidden;
+  }
+  .main-div {
+    overflow: hidden;
+  } 
+  .footer-ring-photo {
+    opacity: 0;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .experience-ring-photo {
+    position: absolute;
+    height: 70px;
+    width: 20%;
+    left: 87%;
+    top: 125%;
 }
 .circle-image {
     height: 53px;
     width: 80px;
-    top: 51%;
-    left: 55%;
-}
-.skill-name {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    
-}
-.skill-experience {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
-    font-size: 0.75em;
-
-}
-.experience {
-    height: 28%;
-}
-.footer {
-    background-color: #242424;
-    
-}
-.name_underline {
-    color: white;
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-.contact_text {
-    font-size: 0.75em;
-    font-weight: normal;
-}
-.experience-ring-photo {
-        position: absolute;
-        height: 70px;
-        width: 20%;
-        left: 87%;
-        top: 88%;
-    }
-.footer-ring-photo {
-    position: absolute;
-    height: 10%;
-    width: 20%;
-    top: 378%;
-    left: -4%;
-    
-    /* right: 10%;   */
-}
-#name-1{
-    /* position: absolute; */
-    font-size: 4.25em;
-    /* width: 80%; */
+    top: 107%;
+    left: 79.3%;
 }
 
-@media only screen and  (max-width: 576px) {
-
-            
-            .main-div {
-                height: 100%;
-                overflow: hidden;
-                font-size: 0.75em;
-                }
-                .profile-image {
-                    width: 100%;
-                    height: 20%;
-                    overflow: hidden;
-                }
-                .circle-image {
-
-                    top: 93%;
-                    left: 79%;
-                    overflow: hidden;
-                
-               
-            }
-            .experience  {
-                height: 50%;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                /* margin: 0; */
-                overflow: hidden;
-
-            }
-            .experience-ring-photo {
-                position: absolute;
-                height: 94px;
-                width: 35%;
-                left: 87%;
-                top: 139%;
-                overflow: hidden;
-            }
-           
-}   
-
-
-/* .circle-image {
-    height: 53px;
-    width: 80px;
-    top: 35%;
-    left: 89%;
-} */
-@media only screen and  (min-width: 577px) and (max-width:750px ) {
-    .profile-image {
-        width: 58%;     
-        height: 20%;
-        overflow: hidden;
-    }
-    .main-div {
-        /* height: 100%; */
-        overflow: hidden;
-        /* font-size: 0.75em; */
-    }
-
-}      
+}
